@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input6a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input6a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input6a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
