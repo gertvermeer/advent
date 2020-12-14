@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Day13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Day5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Day6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input6a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +32,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lVgMr7zkCv9hZziidBkSi7YYqt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -35,18 +62,6 @@
       <recent name="C:\Users\ws60cp\IdeaProjects\advent\src\main\java" />
       <recent name="C:\Users\ws60cp\IdeaProjects\advent\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -79,6 +94,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1336" height="323" key="GridCell.Tab.0.bottom" timestamp="1607929146580">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="323" key="GridCell.Tab.0.bottom/0.23.2560.1335@0.23.2560.1335" timestamp="1607929146580" />
+    <state width="1336" height="323" key="GridCell.Tab.0.center" timestamp="1607929146579">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="323" key="GridCell.Tab.0.center/0.23.2560.1335@0.23.2560.1335" timestamp="1607929146579" />
+    <state width="1336" height="323" key="GridCell.Tab.0.left" timestamp="1607929146579">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="323" key="GridCell.Tab.0.left/0.23.2560.1335@0.23.2560.1335" timestamp="1607929146579" />
+    <state width="1336" height="323" key="GridCell.Tab.0.right" timestamp="1607929146580">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="323" key="GridCell.Tab.0.right/0.23.2560.1335@0.23.2560.1335" timestamp="1607929146580" />
+    <state width="1336" height="398" key="GridCell.Tab.1.bottom" timestamp="1607864301207">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="398" key="GridCell.Tab.1.bottom/0.23.2560.1335@0.23.2560.1335" timestamp="1607864301207" />
+    <state width="1336" height="398" key="GridCell.Tab.1.center" timestamp="1607864301207">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="398" key="GridCell.Tab.1.center/0.23.2560.1335@0.23.2560.1335" timestamp="1607864301207" />
+    <state width="1336" height="398" key="GridCell.Tab.1.left" timestamp="1607864301206">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="398" key="GridCell.Tab.1.left/0.23.2560.1335@0.23.2560.1335" timestamp="1607864301206" />
+    <state width="1336" height="398" key="GridCell.Tab.1.right" timestamp="1607864301207">
+      <screen x="0" y="23" width="2560" height="1335" />
+    </state>
+    <state width="1336" height="398" key="GridCell.Tab.1.right/0.23.2560.1335@0.23.2560.1335" timestamp="1607864301207" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -99,6 +148,21 @@
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day5.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day6.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day13.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

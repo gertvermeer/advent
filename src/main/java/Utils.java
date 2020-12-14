@@ -10,7 +10,7 @@ public class Utils {
     public List<String> readfile(String filename){
         List<String> resultsList = new ArrayList<String>();
         try {
-            File myObj = new File("C:\\Users\\ws60cp\\IdeaProjects\\advent\\src\\main\\resources\\"+ filename);
+            File myObj = new File("src/main/resources/"+ filename);
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
