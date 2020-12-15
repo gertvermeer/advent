@@ -70,8 +70,7 @@ public class Day14 {
         List<String> input = utils.readfile("input14.txt");
 
         HashMap<BigInteger, BigInteger> memory = new HashMap<>();
-
-        BigInteger keyBi = BigInteger.valueOf(0);
+        BigInteger keyBi;
 
         int t = -1;
         String mask = "";
@@ -83,17 +82,16 @@ public class Day14 {
             }
             Long key = Long.valueOf(Integer.parseInt(input.get(t).replaceAll(".*\\[", "").replaceAll("\\].*", "")));
             keyBi = BigInteger.valueOf(key);
-
             //long value = Long.parseLong(input.get(t).replaceAll("mem.* = ", ""));
-            String binValue = "0000000000000000000000000000000000000000000" + Long.toBinaryString(key);
-            binValue = binValue.substring(binValue.length() - 36, binValue.length());
 
+            String binValue = "0000000000000000000000000000000000000000000" + Long.toBinaryString(key);
+            binValue = binValue.substring(binValue.length() - 36);
             int i = 1;
             List<Integer> xList = new ArrayList<>();
             for (char c : mask.toCharArray()) {
                 if (c != 'X') {
                     if(c!='0'){
-                        binValue = binValue.substring(0, i - 1) + String.valueOf(c) + binValue.substring(i, binValue.length());
+                        binValue = binValue.substring(0, i - 1) + "1" + binValue.substring(i);
                     }
                 } else {
                     xList.add(i);
@@ -126,21 +124,21 @@ public class Day14 {
 
     }
 
-    private void generateKeys(HashMap<BigInteger, BigInteger> memory, String binValue, List<Integer> xList, BigInteger res) {
-        BigInteger keyBi = BigInteger.valueOf(0);
+    private void generateKeys(HashMap<BigInteger, BigInteger> memory, String binValue, List<Integer> xList, BigInteger key) {
+        BigInteger keyBi;
         if (xList.size() == 1){
-            String binValue0 = binValue.substring(0, xList.get(0) - 1) + "0" + binValue.substring(xList.get(0), binValue.length());
+            String binValue0 = binValue.substring(0, xList.get(0) - 1) + "0" + binValue.substring(xList.get(0));
             keyBi = getBigIntFromBinString(binValue0);
-            memory.put(keyBi, res);
-            binValue0 = binValue.substring(0, xList.get(0) - 1) + "1" + binValue.substring(xList.get(0), binValue.length());
+            memory.put(keyBi, key);
+            binValue0 = binValue.substring(0, xList.get(0) - 1) + "1" + binValue.substring(xList.get(0));
             keyBi = getBigIntFromBinString(binValue0);
-            memory.put(keyBi, res);
+            memory.put(keyBi, key);
             return;
         } else {
             String binValue0 = binValue.substring(0, xList.get(0) - 1) + "0" + binValue.substring(xList.get(0), binValue.length());
-            generateKeys(memory, binValue0, xList.subList(1,xList.size()), res);
+            generateKeys(memory, binValue0, xList.subList(1,xList.size()), key);
             binValue0 =  binValue.substring(0, xList.get(0) - 1) + "1" + binValue.substring(xList.get(0), binValue.length());
-            generateKeys(memory, binValue0, xList.subList(1,xList.size()), res);
+            generateKeys(memory, binValue0, xList.subList(1,xList.size()), key);
         }
 
     }
@@ -152,7 +150,6 @@ public class Day14 {
             if (binValue.substring(tc - 1, tc).equals("1")) {
                 res = res.add(bi);
             }
-
             bi = bi.multiply(BigInteger.valueOf(2));
         }
         return res;
