@@ -1,8 +1,6 @@
 
 
-import java.io.ObjectInputValidation;
 import java.math.BigInteger;
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Day14 {
@@ -80,12 +78,16 @@ public class Day14 {
                 mask = input.get(t).replace("mask = ", "");
                 continue;
             }
-            Long key = Long.valueOf(Integer.parseInt(input.get(t).replaceAll(".*\\[", "").replaceAll("\\].*", "")));
-            keyBi = BigInteger.valueOf(key);
-            //long value = Long.parseLong(input.get(t).replaceAll("mem.* = ", ""));
 
-            String binValue = "0000000000000000000000000000000000000000000" + Long.toBinaryString(key);
+            String keyString = input.get(t).replaceAll(".*\\[", "").replaceAll("\\].*", "");
+            Long keyLong = Long.parseLong(keyString);
+            keyBi = BigInteger.valueOf(keyLong);
+            //long value = Long.parseLong(input.get(t).replaceAll("mem.* = ", ""));
+            String binValue = "0000000000000000000000000000000000000000000" + Long.toBinaryString(keyLong);
             binValue = binValue.substring(binValue.length() - 36);
+
+            long value = Long.parseLong(input.get(t).replaceAll("mem.* = ", ""));
+            memory.put(keyBi, BigInteger.valueOf(value));
             int i = 1;
             List<Integer> xList = new ArrayList<>();
             for (char c : mask.toCharArray()) {
@@ -117,6 +119,7 @@ public class Day14 {
             BigInteger a = (BigInteger) pair.getValue();
             sum = sum.add(a);
             it.remove();
+            //System.out.println(sum);
         }
 
 
@@ -154,4 +157,8 @@ public class Day14 {
         }
         return res;
     }
+
+
+
+
 }
