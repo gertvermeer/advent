@@ -15,7 +15,7 @@ public class Utils {
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
                 resultsList.add(data);
-                System.out.println(data);
+               // System.out.println(data);
             }
             myReader.close();
         } catch (FileNotFoundException e) {

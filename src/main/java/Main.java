@@ -1,11 +1,11 @@
-import Day16.Day16;
+import Day7.Day7;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        new Day16().go2();
+        new Day7().go2();
 
 
 
