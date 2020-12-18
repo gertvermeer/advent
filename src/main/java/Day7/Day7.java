@@ -59,12 +59,13 @@ public class Day7 {
             pointer ++;
         }
         Bag searchBag = bagListRep.get(pointer);
-        long  count = recursiveCount(searchBag, bagListRep,0);
-
+        long  count = recursiveCount(searchBag, bagListRep);
+        //count--;
         System.out.println("Totoal bags" + count);
     }
 
-    private long recursiveCount(Bag bag, List<Bag> bagListRep, long count) {
+    private long recursiveCount(Bag bag, List<Bag> bagListRep) {
+        long count = 1;
         List<Bag> childBags = new ArrayList<>();
         List<Integer> childNumber = new ArrayList<>();
         int pointer = 0;
@@ -80,7 +81,7 @@ public class Day7 {
 
             int index = 0;
             for (Bag childBag: childBags){
-                count = count + childNumber.get(index) * recursiveCount(childBag, bagListRep,count);
+                count = count + childNumber.get(index) * recursiveCount(childBag, bagListRep);
                 index ++;
             }
         }
