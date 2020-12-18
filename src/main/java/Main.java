@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Day10().go();
+        new Day10().go2();
 
 
 
