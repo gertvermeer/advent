@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day17/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day17/Action4d.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day17/Day17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day17/Grid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day17/Grid4D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Day18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input18.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Day7/Day7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day7/Day7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day16/Day16.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day16/Day16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day16/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day16/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day7/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day7/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day7/Day7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day7/Day7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/input7.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607687627381</updated>
       <workItem from="1607687632417" duration="9513000" />
-      <workItem from="1608201202398" duration="14465000" />
+      <workItem from="1608201202398" duration="18236000" />
+      <workItem from="1608279703172" duration="6100000" />
     </task>
     <servers />
   </component>
@@ -327,6 +307,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Day1.java</url>
           <line>31</line>
           <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day18.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
