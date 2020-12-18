@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Day10 {
@@ -13,47 +14,39 @@ public class Day10 {
         input.forEach(s ->
                 adapterList.add(Integer.parseInt(s)));
 
-        List<Integer>  result = adapterList(0, 5, new ArrayList<>(), adapterList);
+        Integer[] yolts = new Integer[4];
+
+        List<Integer>  result = adapterList(0, new ArrayList<>(), adapterList, yolts);
 
         result.forEach(s -> System.out.println(s));
 
+        System.out.printf("Yolts", yolts);
     }
 
 
-    public List<Integer> adapterList(int from, int target, List<Integer> usedAdapterList, List<Integer> leftAdapterList) {
+    public List<Integer> adapterList(int from,  List<Integer> usedAdapterList, List<Integer> leftAdapterList, Integer[]yolts) {
 
         int numberOfAdapters = usedAdapterList.size() + leftAdapterList.size();
 
         if (leftAdapterList.size() == 0) {
-            int lastAdapter = usedAdapterList.get(usedAdapterList.size() - 1);
-            if (lastAdapter >= target-3 && lastAdapter <= target) {
                 return usedAdapterList;
-            } else {
-                usedAdapterList.add(-1);
-                return usedAdapterList;
-            }
         }
 
-        List<Integer> nextAdapter = new ArrayList<>();
+        Integer fromStart = from;
         for (Integer i = 1; i < 4; i++) {
-            nextAdapter.add(from + i);
-        }
-
-        for (Integer possibleAdap : nextAdapter) {
-
+            Integer possibleAdap = fromStart + i;
             if (leftAdapterList.contains(possibleAdap)) {
+                yolts[i] = yolts[i]+1;
                 from = possibleAdap;
-                leftAdapterList.remove(possibleAdap);
+                leftAdapterList.remove(Integer.valueOf(possibleAdap));
                 usedAdapterList.add(possibleAdap);
-                List<Integer> result = adapterList(from, target, usedAdapterList, leftAdapterList);
+                List<Integer> result = adapterList(from, usedAdapterList, leftAdapterList, yolts);
                 if(result.size() == numberOfAdapters){
                     return result;
                 }
-                if(result.get(result.size()-1)==-1){
-                    result.remove(-1);
-                }
+                yolts[i]=yolts[i]-1;
                 leftAdapterList.add(possibleAdap);
-                usedAdapterList.remove(possibleAdap);
+                usedAdapterList.remove(Integer.valueOf(possibleAdap));
             }
 
         }

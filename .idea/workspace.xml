@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Day10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/input10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/input10.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,8 @@
       <workItem from="1607687632417" duration="9513000" />
       <workItem from="1608201202398" duration="18236000" />
       <workItem from="1608279703172" duration="11704000" />
-      <workItem from="1608302736824" duration="4144000" />
+      <workItem from="1608302736824" duration="4415000" />
+      <workItem from="1608321443874" duration="1717000" />
     </task>
     <servers />
   </component>
@@ -328,7 +327,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Day10.java</url>
-          <line>24</line>
+          <line>28</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
