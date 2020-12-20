@@ -1,10 +1,10 @@
 package Day17;
 
-import com.sun.imageio.plugins.gif.GIFImageReader;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import org.omg.CORBA.PUBLIC_MEMBER;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;

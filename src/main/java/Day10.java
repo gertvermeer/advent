@@ -1,5 +1,6 @@
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -41,25 +42,80 @@ public class Day10 {
         input.forEach(s ->
                 adapterList.add(Integer.parseInt(s)));
 
+        Collections.sort(adapterList);
+
+        adapterList.forEach(s -> System.out.println(s));
+
         Integer max = 0;
         for (Integer s : adapterList){
             max = Integer.max(s,max);
         }
 
-        BigInteger  result = adapterPos(0, max,new ArrayList<>(), adapterList);
+        ArrayList<Integer> unique = new ArrayList<>();
+        int sp = 0;
+        int lastvalue =0;
+        for(Integer check : adapterList){
 
-        System.out.println("Answer" + result);
+            if (check == lastvalue +3){
+                unique.add(sp);
+            }
+            sp ++;
+            lastvalue = check;
+        }
+
+        unique.add(adapterList.size());
+
+
+        BigInteger total = BigInteger.valueOf(1);
+
+        sp = 0;
+        int ep = unique.get(0);
+        int pointer = 0;
+        while (pointer<unique.size()){
+            int startAdapter;
+            if (sp == 0){
+                startAdapter = 0;
+            } else {
+                startAdapter = adapterList.get(sp);
+            }
+            int targetAdapter;
+            targetAdapter = adapterList.get(ep-1);
+            List<Integer> searchList = adapterList.subList(sp,ep);
+            BigInteger sub = adapterPos(startAdapter, targetAdapter, new ArrayList<>(), searchList);
+            if(sub.equals(BigInteger.valueOf(0))){
+                System.out.println(" prrrrr"  + startAdapter + "target:" +  targetAdapter);
+            }
+            total = total.multiply(sub);
+            sp = unique.get(pointer);
+            if (pointer == unique.size()-1){
+                ep = adapterList.get(adapterList.size()-1);
+            } else {
+                ep = unique.get(pointer + 1);
+            }
+            pointer ++;
+
+        }
+
+
+        BigInteger  result = adapterPos(77, max,new ArrayList<>(), adapterList);
+
+        System.out.println("Answer" + total);
 
     }
 
 
 
     public BigInteger adapterPos (int from, int target,List<Integer> usedAdapterList, List<Integer> leftAdapterList) {
+
+        if (leftAdapterList.size() == 1){
+            return BigInteger.valueOf(1);
+        }
+
         BigInteger sum = BigInteger.valueOf(0);
-        int numberOfAdapters = usedAdapterList.size() + leftAdapterList.size();
 
         if (usedAdapterList.size()>0 && usedAdapterList.get(usedAdapterList.size()-1) == target) {
             return BigInteger.valueOf(1);
+
         }
         if (leftAdapterList.size()==0){
             return BigInteger.valueOf(0);
