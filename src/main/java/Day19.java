@@ -1,6 +1,7 @@
 import Day16.Utils;
 import Day17.Grid;
 import Day17.Grid4D;
+import com.sun.javafx.image.IntPixelGetter;
 import org.w3c.dom.ls.LSOutput;
 
 import javax.security.auth.callback.CallbackHandler;
@@ -17,6 +18,7 @@ public class Day19 {
     HashMap<Integer, List<List<Integer>>> rulesMap = new HashMap<>();
     HashMap<Integer, Character> valueMap = new HashMap<>();
 
+    List<String>  pathList = new ArrayList<>();
 
     public void go() {
         List<String> input = utils.readfile("input19.txt");
@@ -47,7 +49,8 @@ public class Day19 {
         }
 
         while (pointer < input.size()) {
-            String result = checkStringonRule(input.get(pointer),0);
+            String result = itRuleList(input.get(pointer),0);
+            System.out.println(pathList);
             if (result.length() == input.get(pointer).length() && checkAllPlus(result)){
                 numberValid++;
 
@@ -61,6 +64,19 @@ public class Day19 {
 
         System.out.println("Number of valid: " + numberValid);
 
+    }
+
+    public String itRuleList(String checked, Integer rule){
+        pathList = new ArrayList<>();
+        String check = checkStringonRule(checked,rule,"");
+        while (checkAllPlus(check.substring(0,check.length()-1)) && check.contains("f")){
+            check = checkStringonRule(checked,rule,"");
+            System.out.println(check);
+        }
+
+
+
+        return "";
     }
 
 
@@ -87,10 +103,12 @@ public class Day19 {
     }
 
 
-    public String checkStringonRule(String checked, Integer rule){
+    public String checkStringonRule(String checked, Integer rule, String path){
+
+        //System.out.println(checked + "rule:"  + rule );
 
         if (checkAllPlus(checked)){
-            return checked + "f";
+            return checked + "fall";
         }
         if(valueMap.containsKey(rule)){
             return checkValidCharacter(checked, rule);
@@ -102,19 +120,24 @@ public class Day19 {
         for (List<Integer> ruleList : ruleListList){
             checked = checkStart;
 
+            if (ruleList.size() > 1){
+                path = path + (rule+ ":");
+            }
             for (Integer rulec: ruleList){
-                checked = checkStringonRule(checked, rulec);
+                checked = checkStringonRule(checked, rulec, path);
                if (checked.contains("f")){
                     break;
                 }
             }
-             if (!checked.contains("f")){
-                return checked;
+
+            if (!checked.contains("f")) {
+                    return checked;
             }
+
         }
 
+        pathList.add(path);
         return checked;
-
 
     }
 
@@ -129,7 +152,7 @@ public class Day19 {
         if (ruleChar.equals(checked.charAt(index))) {
             checked = checked.substring(0, index) + '+' + checked.substring(index + 1) ;
         } else {
-            return checked + "f";
+            return checked + "fvalidcharacter";
         }
         return checked;
     }

@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c063690-8c88-4bfb-88ec-e990c20aa5a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Day19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input19.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Day21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input21.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Day10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Day17/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day17/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Day19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Day19.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Day10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day17/Day17.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day17/Day17.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Day17/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day17/Grid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day17/Grid4D.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day17/Grid4D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day18.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day7/Day7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day7/Day7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Day9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Day19.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Day19.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +73,18 @@
       <recent name="C:\Users\ws60cp\IdeaProjects\advent\src\main\java" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -106,6 +114,10 @@
       <workItem from="1608279703172" duration="11704000" />
       <workItem from="1608302736824" duration="4415000" />
       <workItem from="1608321443874" duration="5225000" />
+      <workItem from="1608535290491" duration="8420000" />
+      <workItem from="1608559341249" duration="609000" />
+      <workItem from="1608561413466" duration="1070000" />
+      <workItem from="1608562923193" duration="2329000" />
     </task>
     <servers />
   </component>
@@ -348,11 +360,22 @@
           <line>70</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day21.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Day21.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="bagListRep.get(0).color" />
+        <watch expression="codeHmap.entrySet().toArray()[0]" />
       </configuration>
     </watches-manager>
   </component>
